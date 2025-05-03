@@ -1,0 +1,91 @@
+/* style.css */
+
+:root {
+    --main-bg: #ffffff;
+    --accent-color: #007acc;
+    --text-color: #333;
+    --header-bg: #f4f4f4;
+    --section-bg: #fafafa;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--header-bg);
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 340px;
+    height: 340px;
+    object-fit:fill;
+    border-radius: 40%;
+    border: 3px solid var(--accent-color);
+  }
+  
+  section {
+    max-width: 800px;
+    background-color: var(--section-bg);
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--header-bg);
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+  }
+  
