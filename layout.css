@@ -10,7 +10,7 @@
 
 header,
 section {
-  margin-bottom: var(--space-96);
+  margin-bottom: var(--space-12);
 }
 
 /* ============================
@@ -45,14 +45,10 @@ header {
 }
 
 /* ============================
-   OTHERS
+    WORK EXPERIENCE SECTION
 ============================ */
 
-.grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--space-80);
-}
+      
 
 /* ============================
     EDUCATION SECTION
