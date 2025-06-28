@@ -1,0 +1,141 @@
+@import url('variables.css');
+
+/* ============================
+   GLOBAL RESET
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   BASE STYLES
+============================ */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: var(--color-grey-dark);
+  border-bottom: var(--space-8) solid var(--color-main);
+  line-height: 1;
+}
+
+header img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--color-mint-dark);
+}
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accordion section:nth-child(even) .item {
+  background-color: var(--color-mint-light);
+}
+
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border-radius: 1%;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 92px;
+  row-gap: 32px;
+}
+
+.item {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: var(--space-24);
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: var(--space-24);
+  row-gap: var(--space-16);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--color-main);
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.open {
+  border-top: 4px solid var(--color-main);
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open h2 {
+  color: var(--color-main);
+}
+
+.icon {
+  color: var(--color-main);
+  width: 24px;
+  height: 24px;
+}
+
+.hidden-box {
+  grid-column: 1;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.open .hidden-box {
+  max-height: 500px; /* Adjust as needed */
+  opacity: 1;
+}
+
+.hidden-box ul {
+  color: var(--color-grey-muted);
+  margin-left: 20px;
+  margin-bottom: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ============================
+   TYPOGRAPHY
+============================ */
+h1 {
+  margin-bottom: var(--space-24);
+  font-size: var(--font-44);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+h2 {
+  margin-bottom: var(--space-4);
+  font-size: var(--font-24);
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  color: var(--color-main);
+}
+
+h2 {
+  color: var(--color-grey-muted);
+}
+
+h3 {
+  margin-bottom: var(--space-24);
+  font-size: var(--font-20);
+}

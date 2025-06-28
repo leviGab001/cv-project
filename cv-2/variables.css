@@ -1,0 +1,45 @@
+/* ============================
+   DESIGN TOKENS / VARIABLES
+============================ */
+
+:root {
+  /* Color palette */
+  --color-main: #38b2ac;
+  --color-main-hover: #319795;
+  --color-grey-dark: #343a40;
+  --color-grey-muted: #495057;
+  --color-mint-light: #e6fcf5;
+  --color-mint-dark: #c3fae8;
+
+  /* Border radius */
+  --radius-sm: 12px;
+  --radius-pill: 100px;
+
+  /* SPACING SYSTEM (px) */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+
+  /* FONT SIZE SYSTEM (px) */
+  --font-10: 10px;
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font-24: 24px;
+  --font-30: 30px;
+  --font-36: 36px;
+  --font-44: 44px;
+  --font-52: 52px;
+  --font-62: 62px;
+
+}
