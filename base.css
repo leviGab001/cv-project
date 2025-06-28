@@ -1,0 +1,48 @@
+@import url('variables.css');
+
+/* ============================
+   GLOBAL RESET
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   BASE STYLES
+============================ */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-grey-dark);
+  border-bottom: var(--space-8) solid var(--color-main);
+}
+
+header img {
+  width: 440px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+
+/* ============================
+   TYPOGRAPHY
+============================ */
+h1 {
+  margin-bottom: var(--space-24);
+  font-size: var(--font-44);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+h2 {
+  margin-bottom: var(--space-4);
+  font-size: var(--font-24);
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  margin-bottom: var(--space-24);
+  font-size: var(--font-20);
+}
