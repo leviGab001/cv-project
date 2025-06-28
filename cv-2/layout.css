@@ -23,6 +23,102 @@ header {
   margin-top: var(--space-64);
 }
 
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  flex-shrink: 0;
+  transform: scale(1.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* border: 4px solid var(--color-mint-dark); */
+  margin-right: 68px;
+}
+
+.carousel {
+  width: 850px;
+  margin: 60px auto;
+  background-color: var(--color-main);
+  border-radius: 8px;
+  color: var(--color-mint-dark);
+/*   padding: 28px;
+  padding-left: 72px;
+  padding-right: 48px; */
+  padding: 32px 48px 32px 72px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 25%);
+  position: relative;
+
+  font-size: var(--font-18);
+  line-height: 1.2;
+
+  display: flex;
+/*   align-items: center; */
+  gap: 0px;
+}
+
+.btn {
+  background-color: var(--color-mint-dark);
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0 , 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: var(--color-main);
+
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+
+}
+
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 39px);
+  
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  border: 2px solid var(--color-main);
+  background-color: var(--color-mint-light);
+  cursor: pointer;
+
+
+}
+
+.dot--fill {
+  background-color: var(--color-main);
+}
+
 .profile-text-box {
     align-self: center;
 }
@@ -41,12 +137,6 @@ header {
 .profile-infos p {
   font-size: var(--font-18);
   color: var(--color-grey-muted);
-}
-
-.profile-summary-text{
-    margin-bottom: var(--space-24);
-    font-size: var(--font-18);
-    line-height: 1.7;
 
 }
 
@@ -59,20 +149,5 @@ footer {
   margin-bottom: var(--space-48);
   font-size: var(--font-14);
   color: var(--color-grey-muted);
-}
 
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 var(--space-16);
-  }
-
-  header {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  header img {
-    margin: auto;
-  }
 }
