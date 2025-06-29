@@ -14,15 +14,19 @@ section {
 }
 
 /* ============================
-   HEADER SECTION
+   HEADER
 ============================ */
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: var(--space-24);
   margin-top: var(--space-64);
+  align-items: center;
 }
 
+/* ============================
+   PROFILE PHOTO
+============================ */
 .profile-photo {
   width: 220px;
   height: 220px;
@@ -31,31 +35,31 @@ header {
   flex-shrink: 0;
   transform: scale(1.4);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  /* border: 4px solid var(--color-mint-dark); */
-  margin-right: 68px;
+  margin-right: 48px; /* adjusted to reduce left gap */
 }
 
+/* ============================
+   CAROUSEL SECTION
+============================ */
 .carousel {
   width: 850px;
   margin: 60px auto;
   background-color: var(--color-main);
-  border-radius: 8px;
+  border-radius: 16px;
   color: var(--color-mint-dark);
-/*   padding: 28px;
-  padding-left: 72px;
-  padding-right: 48px; */
   padding: 32px 48px 32px 72px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 25%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* fixed rgba syntax */
   position: relative;
-
   font-size: var(--font-18);
-  line-height: 1.2;
-
+  line-height: 1.5;
   display: flex;
-/*   align-items: center; */
-  gap: 0px;
+  align-items: center;
+  gap: 0;
 }
 
+/* ============================
+   CAROUSEL BUTTONS
+============================ */
 .btn {
   background-color: var(--color-mint-dark);
   border: none;
@@ -63,43 +67,39 @@ header {
   width: 40px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0 12px 24px rgba(0 , 0, 0, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .btn-icon {
   height: 24px;
   width: 24px;
   stroke: var(--color-main);
-
 }
 
 .btn--right {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
-
 }
 
 .btn--left {
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
-
-
 }
 
+/* ============================
+   DOT NAVIGATION
+============================ */
 .dots {
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 39px);
-  
   display: flex;
   gap: 12px;
 }
@@ -111,16 +111,18 @@ header {
   border: 2px solid var(--color-main);
   background-color: var(--color-mint-light);
   cursor: pointer;
-
-
+  transition: background-color 0.3s;
 }
 
 .dot--fill {
   background-color: var(--color-main);
 }
 
+/* ============================
+   PROFILE TEXT
+============================ */
 .profile-text-box {
-    align-self: center;
+  align-self: center;
 }
 
 .profile-text-box h1 {
@@ -130,24 +132,23 @@ header {
 }
 
 .profile-infos {
-    margin-bottom: var(--space-24);
-
+  margin-bottom: var(--space-24);
 }
 
 .profile-infos p {
   font-size: var(--font-18);
   color: var(--color-grey-muted);
-
 }
 
 .profile-titles {
-    margin-bottom: var(--space-12);
-
+  margin-bottom: var(--space-12);
 }
 
+/* ============================
+   FOOTER
+============================ */
 footer {
   margin-bottom: var(--space-48);
   font-size: var(--font-14);
   color: var(--color-grey-muted);
-
 }
